@@ -41,6 +41,7 @@ https://wiki.python.org/moin/Python2orPython3
 need to divide positive and negative emoji
 
 ## Contributors
+Brandon Mitchell brandmit@umich.edu
 choyang
 
 ## License
