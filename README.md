@@ -41,8 +41,8 @@ https://wiki.python.org/moin/Python2orPython3
 need to divide positive and negative emoji
 
 ## Contributors
-Brandon Mitchell brandmit@umich.edu
 choyang
+jisookim: jisookim@umich.edu
 
 ## License
 [MIT License](https://github.com/bcko/twitter_emoji/blob/master/LICENSE)
