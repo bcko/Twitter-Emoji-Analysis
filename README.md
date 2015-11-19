@@ -44,6 +44,7 @@ need to divide positive and negative emoji
 * Yay-hyung Cho choyang@umich.edu
 * jisookim: jisookim@umich.edu
 * Brandon Mitchell brandmit@umich.edu
+* Andie Nam namyou@umich.edu
 
 ## License
 [MIT License](https://github.com/bcko/twitter_emoji/blob/master/LICENSE)
