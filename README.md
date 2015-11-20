@@ -7,9 +7,10 @@
 ### Linux Environment
 
 #### Install Virtualbox
-
 [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
 
+#### Koding
+[Koding](https://koding.com/R/bcko)
 
 ### Python 3.x?
 
@@ -42,7 +43,8 @@ need to divide positive and negative emoji
 
 ## Contributors
 * Yay-hyung Cho choyang@umich.edu
-* jisookim: jisookim@umich.edu
+* Byungcheon Ko bcko@umich.edu
+* Jisoo kim: jisookim@umich.edu
 * Brandon Mitchell brandmit@umich.edu
 * Andie Nam namyou@umich.edu
 
