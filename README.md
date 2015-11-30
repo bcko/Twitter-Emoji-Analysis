@@ -27,24 +27,22 @@ https://wiki.python.org/moin/Python2orPython3
 
 #### Japanese
 #### Korean
-####
+#### United States
+#### Canada
+#### Brazil
 
 ## Emoji 
 ###positive
 
 ###negative
-😩��
+
 ###neutral
 
-
-😅😰😥😪😭😂😢😣😞😒😌😔😁😳😛😝😜😙😗😚😘😍😉☺😊😀😃😄👳👲😑😏😇😶😯😕😐😬😮👿😈😧😦😟😲😵😴😎😷😋😆😖😤😡😠😱😨😫💩👽💀🙊🙉🙈👺👹😾😹😿🙀😼😽😻😸😺👸👼👱👵👴👩👨👧👦👶💂👷👮
-
-need to divide positive and negative emoji
 
 ## Contributors
 * Yay-hyung Cho choyang@umich.edu
 * Byungcheon Ko bcko@umich.edu
-* Jisoo kim: jisookim@umich.edu
+* Jisoo Kim: jisookim@umich.edu
 * Brandon Mitchell brandmit@umich.edu
 * Andie Nam namyou@umich.edu
 
