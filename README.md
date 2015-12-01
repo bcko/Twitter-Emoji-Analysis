@@ -31,12 +31,15 @@ Groups are divided according to language and location provided by [Twitter Advan
 **Japan**
   * Language : Japanese
   * Location : Japan
+ 
 **Korea**
   * Language : Korean
   * Location : Korea
+
 **United States**
   * Language : English
   * Location : United States
+
 **Canada**
   * Language : English
   * Location : Canada
