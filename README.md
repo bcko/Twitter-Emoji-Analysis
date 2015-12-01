@@ -49,12 +49,10 @@ Groups are divided according to language and location provided by [Twitter Advan
   * Language : Portugese
   * Location : Brazil
 
-# Emoji(symbol) and emoticon(text)
+# Emoji, Emoticon, Kaomoji
 
-
-## Unicode Emoji 
+## Unicode based Emoji 
 obtained from [Emojipedia](emojipedia.org)
-
 * [Smileys & People](http://emojipedia.org/people/)
 * [Animals & Nature](http://emojipedia.org/nature/)
 * [Food & Drink](http://emojipedia.org/food-drink/)
@@ -64,7 +62,15 @@ obtained from [Emojipedia](emojipedia.org)
 * [Symbols](http://emojipedia.org/symbols/)
 * [Flags](http://emojipedia.org/flags/)
 
+## Kaomoji
+Obtained from [http://japaneseemoticons.me/](http://japaneseemoticons.me/)
+### Positive Kaomoji
+* [Excited](http://japaneseemoticons.me/excited-emoticons/)
+* [Happy](http://japaneseemoticons.me/happy-emoticons/)
+* [Love](http://japaneseemoticons.me/love-emoticons/)
+* [Triumph](http://japaneseemoticons.me/triumph-emoticons/)
 
+### Neutral Kaomoji
 
 
 # Contributors
