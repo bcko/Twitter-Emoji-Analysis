@@ -6,11 +6,12 @@ In order to reproduce the study we need to have
   * [Tweepy library](http://www.tweepy.org/) 
 
 
-** Prerequisite Guide **
+**Prerequisite Guide**
 1. Create a [Koding](https://koding.com/R/bcko) account. [Koding University](http://learn.koding.com/). 
 From Wikipedia,
 > Online development environment owned by Koding, Inc. which allows software developers to program and collaborate online in a web browser without the needs of downloading the software development kits. The platform supports multiple programming languages, including C, C++, Go, Java, Node.js, Perl, PHP, Python, and Ruby.
 2. 
+
 ```
 sudo apt-get update
 sudo apt-get install git
