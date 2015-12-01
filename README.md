@@ -29,7 +29,13 @@ sudo pip3 install tweepy
 # Groups
 Groups are divided according to language and location provided by [Twitter Advanced Search](https://twitter.com/search-advanced)
 
-**Japan**
+| Group    |          |        |               |         |            |         |
+|:--------:|:--------:|:------:|:-------------:|:-------:|:----------:|:-------:|
+| Country  | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
+| Language | Japanese | Korean | English       | English | Portuguese | Spanish |
+| Location | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
+
+**Japan** Language : Japanese, Location
   * Language : Japanese
   * Location : Japan
  
