@@ -1,29 +1,16 @@
 # **Twitter Emoji Analysis**
 
-
-# Development Environment
-
-## Operating System
-Ubuntu 14.04 LTS
-
+# Prerequisites
+In order to reproduce the study we need to have
+* Python 3.4 or later. [Codecademy Python Tutorial](https://www.codecademy.com/learn/python)
+  * [Tweepy library](http://www.tweepy.org/) 
 
 
-* Ubuntu 14.04 LTS
-  * Virtualbox 
-  * Koding
-* Python 3.4 or later
-  * Tweepy library
-
-# Virtualbox
-[Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
-
-
-# Koding
-
-From Wikipedia
+** Prerequisite Guide **
+1. Create a [Koding](https://koding.com/R/bcko) account. [Koding University](http://learn.koding.com/). 
+From Wikipedia,
 > Online development environment owned by Koding, Inc. which allows software developers to program and collaborate online in a web browser without the needs of downloading the software development kits. The platform supports multiple programming languages, including C, C++, Go, Java, Node.js, Perl, PHP, Python, and Ruby.
-
-[Koding](https://koding.com/R/bcko)
+2. 
 ```
 sudo apt-get update
 sudo apt-get install git
@@ -36,38 +23,29 @@ sudo apt-get install python3-pip
 sudo pip3 install tweepy
 ```
 
+# Groups
+Groups are divided according to language and location provided by [Twitter Advanced Search](https://twitter.com/search-advanced)
 
-### Python 3.x?
+** Japan **
+  * Language : Japanese
+  * Location : Japan
+** Korea **
+  * Language : Korean
+  * Location : Korea
+** United States **
+  * Language : English
+  * Location : United States
+** Canada **
+  * Language : English
+  * Location : Canada
 
-UTF-8 support
-https://wiki.python.org/moin/Python2orPython3
+** Brazil **
+  * Language : Portugese
+  * Location : Brazil
 
-
-## Method
-
-
-
-
-### Groups
-
-#### Japanese
-#### Korean
-#### United States
-#### Canada
-#### Brazil
-
-## Emoji 
-
-# Emoji
-Two types of symbols. 
-1. Emoji based on symbol
-2. Emoji based on characters
+# Emoji(symbol) and emoticon(text)
 
 Obtained from [Emojipedia](emojipedia.org)
-Currently up to unicode 8.0 released on June 17, 2015
-
-Unicode 9.0, scheduled for release in mid-2016
-Twitter currently does not support skin tone modifier therefore, skin tone modifier is not included
 
 ## Smileys and People
 [Smileys & People](http://emojipedia.org/people/)
@@ -78,32 +56,8 @@ Twitter currently does not support skin tone modifier therefore, skin tone modif
 ## Food & Drink
 [Food & Drink](http://emojipedia.org/food-drink/)
 
-## Activity
 
 
-
-## Travel & Places
-
-## Objects
-
-## Symbols
-
-## Flags
-
-## Modifiers
-
-
-
-
-
-
-
-
-###positive
-
-###negative
-
-###neutral
 
 
 # Contributors
