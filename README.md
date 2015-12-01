@@ -11,15 +11,27 @@
 
 #### Koding
 [Koding](https://koding.com/R/bcko)
+```
+sudo apt-get update
+sudo apt-get install git
+
+mkdir github
+cd github
+
+git clone https://github.com/bcko/twitter-emoji
+sudo apt-get install python3-pip
+sudo pip3 install tweepy
+```
+
 
 ### Python 3.x?
 
 UTF-8 support
-
 https://wiki.python.org/moin/Python2orPython3
 
 
 ## Method
+
 
 
 
