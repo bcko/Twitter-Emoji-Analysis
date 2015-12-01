@@ -10,6 +10,10 @@
 [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
 
 #### Koding
+
+From Wikipedia
+> Online development environment owned by Koding, Inc. which allows software developers to program and collaborate online in a web browser without the needs of downloading the software development kits. The platform supports multiple programming languages, including C, C++, Go, Java, Node.js, Perl, PHP, Python, and Ruby.
+
 [Koding](https://koding.com/R/bcko)
 ```
 sudo apt-get update
