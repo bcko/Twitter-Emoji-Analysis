@@ -64,14 +64,27 @@ obtained from [Emojipedia](emojipedia.org)
 
 ## Kaomoji
 Obtained from [http://japaneseemoticons.me/](http://japaneseemoticons.me/)
-### Positive Kaomoji
+### Positive
 * [Excited](http://japaneseemoticons.me/excited-emoticons/)
 * [Happy](http://japaneseemoticons.me/happy-emoticons/)
 * [Love](http://japaneseemoticons.me/love-emoticons/)
 * [Triumph](http://japaneseemoticons.me/triumph-emoticons/)
 
-### Neutral Kaomoji
+### Neutral
+* [Confused](http://japaneseemoticons.me/confused-emoticons/)
+* [Crazy](http://japaneseemoticons.me/confused-emoticons/)
+* [Hungry](http://japaneseemoticons.me/confused-emoticons/)
+* [Meh](http://japaneseemoticons.me/meh-emoticons/)
+* [Shy](http://japaneseemoticons.me/shy-emoticons/)
+* [Smug](http://japaneseemoticons.me/smug-emoticons/)
+* [Surprised](http://japaneseemoticons.me/surprised-emoticons/)
 
+### Negative
+* [Angry](http://japaneseemoticons.me/angry-emoticons/)
+* [Hurt or Sick](http://japaneseemoticons.me/hurt-or-sick-emoticons/)
+* [Sad](http://japaneseemoticons.me/sad-emoticons/)
+* [Scared](http://japaneseemoticons.me/scared-emoticons/)
+* [Worried](http://japaneseemoticons.me/worried-emoticons/)
 
 # Contributors
 * Yay-hyung Cho choyang@umich.edu
