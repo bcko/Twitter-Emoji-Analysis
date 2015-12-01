@@ -53,12 +53,16 @@ Groups are divided according to language and location provided by [Twitter Advan
 
 
 ## Unicode Emoji 
-
 obtained from [Emojipedia](emojipedia.org)
-[Smileys & People](http://emojipedia.org/people/)
-[Animals & Nature](http://emojipedia.org/nature/)
-[Food & Drink](http://emojipedia.org/food-drink/)
 
+* [Smileys & People](http://emojipedia.org/people/)
+* [Animals & Nature](http://emojipedia.org/nature/)
+* [Food & Drink](http://emojipedia.org/food-drink/)
+* [Activity](http://emojipedia.org/activity/)
+* [Travel & Places](http://emojipedia.org/travel-places/)
+* [Objects](http://emojipedia.org/objects/)
+* [Symbols](http://emojipedia.org/symbols/)
+* [Flags](http://emojipedia.org/flags/)
 
 
 
