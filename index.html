@@ -1,94 +1,185 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Twitter Emoji Analysis by bcko</title>
+    <meta name="description" content="Twitter Emoji Analysis : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Twitter Emoji Analysis</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Twitter Emoji Analysis</h1>
-          <h2></h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bcko/twitter-emoji">View on GitHub</a>
+
+          <h1 id="project_title">Twitter Emoji Analysis</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bcko/twitter-emoji/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bcko/twitter-emoji/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/bcko/twitter-emoji/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/bcko/twitter-emoji/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/bcko/twitter-emoji" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="twitter-emoji-analysis" class="anchor" href="#twitter-emoji-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Twitter Emoji Analysis</strong>
+</h1>
 
-        <hr>
+<h1>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h1>
 
-        <section id="main_content">
-          <h1>
-<a id="twitter-emoji-analysis" class="anchor" href="#twitter-emoji-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Twitter Emoji Analysis</h1>
+<p>In order to reproduce the study we need to have</p>
+
+<ul>
+<li>Python 3.4 or later. <a href="https://www.codecademy.com/learn/python">Codecademy Python Tutorial</a>
+
+<ul>
+<li>
+<a href="http://www.tweepy.org/">Tweepy library</a> </li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Prerequisite Guide</strong></p>
+
+<ol>
+<li>Create a <a href="https://koding.com/R/bcko">Koding</a> account. <a href="http://learn.koding.com/">Koding University</a>. 
+From Wikipedia,</li>
+</ol>
+
+<blockquote>
+<p>Online development environment owned by Koding, Inc. which allows software developers to program and collaborate online in a web browser without the needs of downloading the software development kits. The platform supports multiple programming languages, including C, C++, Go, Java, Node.js, Perl, PHP, Python, and Ruby.
+2. </p>
+</blockquote>
+
+<pre><code>sudo apt-get update
+sudo apt-get install git
+
+mkdir github
+cd github
+
+git clone https://github.com/bcko/twitter-emoji
+sudo apt-get install python3-pip
+sudo pip3 install tweepy
+</code></pre>
+
+<h1>
+<a id="groups" class="anchor" href="#groups" aria-hidden="true"><span class="octicon octicon-link"></span></a>Groups</h1>
+
+<p>Groups are divided according to language and location provided by <a href="https://twitter.com/search-advanced">Twitter Advanced Search</a></p>
+
+<p><strong>Japan</strong></p>
+
+<ul>
+<li>Language : Japanese</li>
+<li>Location : Japan</li>
+</ul>
+
+<p><strong>Korea</strong></p>
+
+<ul>
+<li>Language : Korean</li>
+<li>Location : Korea</li>
+</ul>
+
+<p><strong>United States</strong></p>
+
+<ul>
+<li>Language : English</li>
+<li>Location : United States</li>
+</ul>
+
+<p><strong>Canada</strong></p>
+
+<ul>
+<li>Language : English</li>
+<li>Location : Canada</li>
+</ul>
+
+<p><strong>Brazil</strong></p>
+
+<ul>
+<li>Language : Portugese</li>
+<li>Location : Brazil</li>
+</ul>
+
+<h1>
+<a id="emoji-emoticon-kaomoji" class="anchor" href="#emoji-emoticon-kaomoji" aria-hidden="true"><span class="octicon octicon-link"></span></a>Emoji, Emoticon, Kaomoji</h1>
 
 <h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="unicode-based-emoji" class="anchor" href="#unicode-based-emoji" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unicode based Emoji</h2>
 
-<h3>
-<a id="linux-environment" class="anchor" href="#linux-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux Environment</h3>
+<p>obtained from <a href="emojipedia.org">Emojipedia</a></p>
 
-<h4>
-<a id="install-virtualbox" class="anchor" href="#install-virtualbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Virtualbox</h4>
-
-<p><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox Download Page</a></p>
-
-<h3>
-<a id="python-3x" class="anchor" href="#python-3x" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python 3.x?</h3>
-
-<p>UTF-8 support</p>
-
-<p><a href="https://wiki.python.org/moin/Python2orPython3">https://wiki.python.org/moin/Python2orPython3</a></p>
+<ul>
+<li><a href="http://emojipedia.org/people/">Smileys &amp; People</a></li>
+<li><a href="http://emojipedia.org/nature/">Animals &amp; Nature</a></li>
+<li><a href="http://emojipedia.org/food-drink/">Food &amp; Drink</a></li>
+<li><a href="http://emojipedia.org/activity/">Activity</a></li>
+<li><a href="http://emojipedia.org/travel-places/">Travel &amp; Places</a></li>
+<li><a href="http://emojipedia.org/objects/">Objects</a></li>
+<li><a href="http://emojipedia.org/symbols/">Symbols</a></li>
+<li><a href="http://emojipedia.org/flags/">Flags</a></li>
+</ul>
 
 <h2>
-<a id="method" class="anchor" href="#method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Method</h2>
+<a id="kaomoji" class="anchor" href="#kaomoji" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kaomoji</h2>
+
+<p>Obtained from <a href="http://japaneseemoticons.me/">http://japaneseemoticons.me/</a></p>
 
 <h3>
-<a id="groups" class="anchor" href="#groups" aria-hidden="true"><span class="octicon octicon-link"></span></a>Groups</h3>
+<a id="positive" class="anchor" href="#positive" aria-hidden="true"><span class="octicon octicon-link"></span></a>Positive</h3>
 
-<h4>
-<a id="japanese" class="anchor" href="#japanese" aria-hidden="true"><span class="octicon octicon-link"></span></a>Japanese</h4>
-
-<h4>
-<a id="korean" class="anchor" href="#korean" aria-hidden="true"><span class="octicon octicon-link"></span></a>Korean</h4>
-
-<h2>
-<a id="emoji" class="anchor" href="#emoji" aria-hidden="true"><span class="octicon octicon-link"></span></a>Emoji</h2>
+<ul>
+<li><a href="http://japaneseemoticons.me/excited-emoticons/">Excited</a></li>
+<li><a href="http://japaneseemoticons.me/happy-emoticons/">Happy</a></li>
+<li><a href="http://japaneseemoticons.me/love-emoticons/">Love</a></li>
+<li><a href="http://japaneseemoticons.me/triumph-emoticons/">Triumph</a></li>
+</ul>
 
 <h3>
-<a id="positive" class="anchor" href="#positive" aria-hidden="true"><span class="octicon octicon-link"></span></a>positive</h3>
+<a id="neutral" class="anchor" href="#neutral" aria-hidden="true"><span class="octicon octicon-link"></span></a>Neutral</h3>
+
+<ul>
+<li><a href="http://japaneseemoticons.me/confused-emoticons/">Confused</a></li>
+<li><a href="http://japaneseemoticons.me/confused-emoticons/">Crazy</a></li>
+<li><a href="http://japaneseemoticons.me/confused-emoticons/">Hungry</a></li>
+<li><a href="http://japaneseemoticons.me/meh-emoticons/">Meh</a></li>
+<li><a href="http://japaneseemoticons.me/shy-emoticons/">Shy</a></li>
+<li><a href="http://japaneseemoticons.me/smug-emoticons/">Smug</a></li>
+<li><a href="http://japaneseemoticons.me/surprised-emoticons/">Surprised</a></li>
+</ul>
 
 <h3>
-<a id="negative" class="anchor" href="#negative" aria-hidden="true"><span class="octicon octicon-link"></span></a>negative</h3>
+<a id="negative" class="anchor" href="#negative" aria-hidden="true"><span class="octicon octicon-link"></span></a>Negative</h3>
 
-<p><g-emoji alias="weary" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f629.png">😩</g-emoji>��</p>
+<ul>
+<li><a href="http://japaneseemoticons.me/angry-emoticons/">Angry</a></li>
+<li><a href="http://japaneseemoticons.me/hurt-or-sick-emoticons/">Hurt or Sick</a></li>
+<li><a href="http://japaneseemoticons.me/sad-emoticons/">Sad</a></li>
+<li><a href="http://japaneseemoticons.me/scared-emoticons/">Scared</a></li>
+<li><a href="http://japaneseemoticons.me/worried-emoticons/">Worried</a></li>
+</ul>
 
-<h3>
-<a id="neutral" class="anchor" href="#neutral" aria-hidden="true"><span class="octicon octicon-link"></span></a>neutral</h3>
-
-<p><g-emoji alias="sweat_smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f605.png">😅</g-emoji><g-emoji alias="cold_sweat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f630.png">😰</g-emoji><g-emoji alias="disappointed_relieved" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f625.png">😥</g-emoji><g-emoji alias="sleepy" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62a.png">😪</g-emoji><g-emoji alias="sob" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62d.png">😭</g-emoji><g-emoji alias="joy" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f602.png">😂</g-emoji><g-emoji alias="cry" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f622.png">😢</g-emoji><g-emoji alias="persevere" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f623.png">😣</g-emoji><g-emoji alias="disappointed" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61e.png">😞</g-emoji><g-emoji alias="unamused" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f612.png">😒</g-emoji><g-emoji alias="relieved" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60c.png">😌</g-emoji><g-emoji alias="pensive" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f614.png">😔</g-emoji><g-emoji alias="grin" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f601.png">😁</g-emoji><g-emoji alias="flushed" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f633.png">😳</g-emoji><g-emoji alias="stuck_out_tongue" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61b.png">😛</g-emoji><g-emoji alias="stuck_out_tongue_closed_eyes" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61d.png">😝</g-emoji><g-emoji alias="stuck_out_tongue_winking_eye" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png">😜</g-emoji><g-emoji alias="kissing_smiling_eyes" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f619.png">😙</g-emoji><g-emoji alias="kissing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f617.png">😗</g-emoji><g-emoji alias="kissing_closed_eyes" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61a.png">😚</g-emoji><g-emoji alias="kissing_heart" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f618.png">😘</g-emoji><g-emoji alias="heart_eyes" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60d.png">😍</g-emoji><g-emoji alias="wink" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png">😉</g-emoji>☺<g-emoji alias="blush" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60a.png">😊</g-emoji><g-emoji alias="grinning" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f600.png">😀</g-emoji><g-emoji alias="smiley" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png">😃</g-emoji><g-emoji alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji><g-emoji alias="man_with_turban" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f473.png">👳</g-emoji><g-emoji alias="man_with_gua_pi_mao" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f472.png">👲</g-emoji><g-emoji alias="expressionless" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f611.png">😑</g-emoji><g-emoji alias="smirk" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png">😏</g-emoji><g-emoji alias="innocent" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f607.png">😇</g-emoji><g-emoji alias="no_mouth" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f636.png">😶</g-emoji><g-emoji alias="hushed" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62f.png">😯</g-emoji><g-emoji alias="confused" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f615.png">😕</g-emoji><g-emoji alias="neutral_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f610.png">😐</g-emoji><g-emoji alias="grimacing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62c.png">😬</g-emoji><g-emoji alias="open_mouth" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62e.png">😮</g-emoji><g-emoji alias="imp" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f47f.png">👿</g-emoji><g-emoji alias="smiling_imp" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f608.png">😈</g-emoji><g-emoji alias="anguished" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f627.png">😧</g-emoji><g-emoji alias="frowning" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f626.png">😦</g-emoji><g-emoji alias="worried" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61f.png">😟</g-emoji><g-emoji alias="astonished" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f632.png">😲</g-emoji><g-emoji alias="dizzy_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f635.png">😵</g-emoji><g-emoji alias="sleeping" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f634.png">😴</g-emoji><g-emoji alias="sunglasses" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60e.png">😎</g-emoji><g-emoji alias="mask" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f637.png">😷</g-emoji><g-emoji alias="yum" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60b.png">😋</g-emoji><g-emoji alias="laughing" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f606.png">😆</g-emoji><g-emoji alias="confounded" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f616.png">😖</g-emoji><g-emoji alias="triumph" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f624.png">😤</g-emoji><g-emoji alias="rage" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f621.png">😡</g-emoji><g-emoji alias="angry" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f620.png">😠</g-emoji><g-emoji alias="scream" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f631.png">😱</g-emoji><g-emoji alias="fearful" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f628.png">😨</g-emoji><g-emoji alias="tired_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62b.png">😫</g-emoji><g-emoji alias="hankey" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a9.png">💩</g-emoji><g-emoji alias="alien" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f47d.png">👽</g-emoji><g-emoji alias="skull" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f480.png">💀</g-emoji><g-emoji alias="speak_no_evil" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f64a.png">🙊</g-emoji><g-emoji alias="hear_no_evil" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f649.png">🙉</g-emoji><g-emoji alias="see_no_evil" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f648.png">🙈</g-emoji><g-emoji alias="japanese_goblin" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f47a.png">👺</g-emoji><g-emoji alias="japanese_ogre" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f479.png">👹</g-emoji><g-emoji alias="pouting_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63e.png">😾</g-emoji><g-emoji alias="joy_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f639.png">😹</g-emoji><g-emoji alias="crying_cat_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63f.png">😿</g-emoji><g-emoji alias="scream_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f640.png">🙀</g-emoji><g-emoji alias="smirk_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63c.png">😼</g-emoji><g-emoji alias="kissing_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63d.png">😽</g-emoji><g-emoji alias="heart_eyes_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63b.png">😻</g-emoji><g-emoji alias="smile_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f638.png">😸</g-emoji><g-emoji alias="smiley_cat" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f63a.png">😺</g-emoji><g-emoji alias="princess" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f478.png">👸</g-emoji><g-emoji alias="angel" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f47c.png">👼</g-emoji><g-emoji alias="person_with_blond_hair" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f471.png">👱</g-emoji><g-emoji alias="older_woman" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f475.png">👵</g-emoji><g-emoji alias="older_man" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f474.png">👴</g-emoji><g-emoji alias="woman" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f469.png">👩</g-emoji><g-emoji alias="man" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f468.png">👨</g-emoji><g-emoji alias="girl" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f467.png">👧</g-emoji><g-emoji alias="boy" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f466.png">👦</g-emoji><g-emoji alias="baby" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f476.png">👶</g-emoji><g-emoji alias="guardsman" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f482.png">💂</g-emoji><g-emoji alias="construction_worker" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f477.png">👷</g-emoji><g-emoji alias="cop" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f46e.png">👮</g-emoji></p>
-
-<p>need to divide positive and negative emoji</p>
-
-<h2>
-<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h2>
+<h1>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h1>
 
 <ul>
 <li>Yay-hyung Cho <a href="mailto:choyang@umich.edu">choyang@umich.edu</a>
 </li>
-<li>jisookim: <a href="mailto:jisookim@umich.edu">jisookim@umich.edu</a>
+<li>Byungcheon Ko <a href="mailto:bcko@umich.edu">bcko@umich.edu</a>
+</li>
+<li>Jisoo Kim: <a href="mailto:jisookim@umich.edu">jisookim@umich.edu</a>
 </li>
 <li>Brandon Mitchell <a href="mailto:brandmit@umich.edu">brandmit@umich.edu</a>
 </li>
@@ -96,23 +187,26 @@
 </li>
 </ul>
 
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
 
 <p><a href="https://github.com/bcko/twitter_emoji/blob/master/LICENSE">MIT License</a></p>
 
 <blockquote>
 <p>The MIT License is a permissive license that is short and to the point. It lets people do anything they want with your code as long as they provide attribution back to you and don’t hold you liable.</p>
 </blockquote>
-        </section>
-
-        <footer>
-          Twitter Emoji Analysis is maintained by <a href="https://github.com/bcko">bcko</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Twitter Emoji Analysis maintained by <a href="https://github.com/bcko">bcko</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
