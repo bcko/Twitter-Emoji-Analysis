@@ -2,11 +2,17 @@
 
 
 # Development Environment
-* Linux
-  * Virtualbox
+
+## Operating System
+Ubuntu 14.04 LTS
+
+
+
+* Ubuntu 14.04 LTS
+  * Virtualbox 
   * Koding
 * Python 3.4 or later
-* Tweepy library
+  * Tweepy library
 
 # Virtualbox
 [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
