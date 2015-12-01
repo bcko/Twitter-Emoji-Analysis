@@ -1,4 +1,3 @@
-# **Twitter Emoji Analysis**
 
 # Prerequisites
 In order to reproduce the study we need to have
