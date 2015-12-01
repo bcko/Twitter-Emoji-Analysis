@@ -29,31 +29,12 @@ sudo pip3 install tweepy
 # Groups
 Groups are divided according to language and location provided by [Twitter Advanced Search](https://twitter.com/search-advanced)
 
-| Group    |          |        |               |         |            |         |
-|:--------:|:--------:|:------:|:-------------:|:-------:|:----------:|:-------:|
-| Country  | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
-| Language | Japanese | Korean | English       | English | Portuguese | Spanish |
-| Location | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
+| Group        |          |        |               |         |            |         |
+|:------------:|:--------:|:------:|:-------------:|:-------:|:----------:|:-------:|
+| **Country**  | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
+| **Language** | Japanese | Korean | English       | English | Portuguese | Spanish |
+| **Location** | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
 
-**Japan** Language : Japanese, Location
-  * Language : Japanese
-  * Location : Japan
- 
-**Korea**
-  * Language : Korean
-  * Location : Korea
-
-**United States**
-  * Language : English
-  * Location : United States
-
-**Canada**
-  * Language : English
-  * Location : Canada
-
-**Brazil**
-  * Language : Portugese
-  * Location : Brazil
 
 # Emoji, Emoticon, Kaomoji
 
