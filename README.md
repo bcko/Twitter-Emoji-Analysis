@@ -1,4 +1,4 @@
-# Twitter Emoji Analysis
+# **Twitter Emoji Analysis**
 
 
 
@@ -48,6 +48,48 @@ https://wiki.python.org/moin/Python2orPython3
 #### Brazil
 
 ## Emoji 
+
+# Emoji
+Two types of symbols. 
+1. Emoji based on symbol
+2. Emoji based on characters
+
+Obtained from [Emojipedia](emojipedia.org)
+Currently up to unicode 8.0 released on June 17, 2015
+
+Unicode 9.0, scheduled for release in mid-2016
+Twitter currently does not support skin tone modifier therefore, skin tone modifier is not included
+
+## Smileys and People
+[Smileys & People](http://emojipedia.org/people/)
+
+## Animals & Nature
+[Animals & Nature](http://emojipedia.org/nature/)
+
+## Food & Drink
+[Food & Drink](http://emojipedia.org/food-drink/)
+
+## Activity
+
+
+
+## Travel & Places
+
+## Objects
+
+## Symbols
+
+## Flags
+
+## Modifiers
+
+
+
+
+
+
+
+
 ###positive
 
 ###negative
@@ -55,13 +97,13 @@ https://wiki.python.org/moin/Python2orPython3
 ###neutral
 
 
-## Contributors
+# Contributors
 * Yay-hyung Cho choyang@umich.edu
 * Byungcheon Ko bcko@umich.edu
 * Jisoo Kim: jisookim@umich.edu
 * Brandon Mitchell brandmit@umich.edu
 * Andie Nam namyou@umich.edu
 
-## License
+# License
 [MIT License](https://github.com/bcko/twitter_emoji/blob/master/LICENSE)
 > The MIT License is a permissive license that is short and to the point. It lets people do anything they want with your code as long as they provide attribution back to you and don’t hold you liable.
