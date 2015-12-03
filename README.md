@@ -28,7 +28,7 @@ sudo pip3 install tweepy
 # Groups
 Groups are divided according to language and location provided by [Twitter Advanced Search](https://twitter.com/search-advanced)
 
-![Twitter Advanced Search](https://raw.githubusercontent.com/bcko/twitter-emoji/master/Readme-Image/twitter%20advanced%20search.PNG)
+![Twitter Advanced Search](https://raw.githubusercontent.com/bcko/twitter-emoji/master/Readme-Image/twitter%20advanced%20search%20highlighted.PNG)
 
 | Group        |          |        |               |         |            |         |
 |:------------:|:--------:|:------:|:-------------:|:-------:|:----------:|:-------:|
