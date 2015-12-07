@@ -37,6 +37,14 @@ Groups are divided according to language and location provided by [Twitter Advan
 | **Location** | Japan    | Korea  | United States | Canada  | Brazil     | Mexico  |
 
 
+
+# How to create an authentication information?
+We will use [application only authentication](https://dev.twitter.com/oauth/application-only) to create consumer key/secret and Access token/secret. 
+go to [Twitter Application Management](https://apps.twitter.com). Click Create New App.
+In application details, fill out Name, Description, and Website. Click agree to developer agreement. Click create your twitter application. 
+In Keys and Access Tokens, Application Settings, we have Consumer Key and Consumer Secret. We also need Access Token and Access Secret. 
+In Your Access Token, 
+
 # Emoji, Emoticon, Kaomoji
 
 ## Unicode based Emoji 
@@ -73,13 +81,6 @@ Obtained from [http://japaneseemoticons.me/](http://japaneseemoticons.me/)
 * [Sad](http://japaneseemoticons.me/sad-emoticons/)
 * [Scared](http://japaneseemoticons.me/scared-emoticons/)
 * [Worried](http://japaneseemoticons.me/worried-emoticons/)
-
-# How to create an authentication information?
-In order to collect data you need 
-
-We will use [application only authentication](https://dev.twitter.com/oauth/application-only) to create consumer key/secret and Access token/secret. 
-go to [Twitter Application Management](https://apps.twitter.com). Click Create New App.
-
 
 # Contributors
 * Yay-hyung Cho choyang@umich.edu
