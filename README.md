@@ -74,6 +74,13 @@ Obtained from [http://japaneseemoticons.me/](http://japaneseemoticons.me/)
 * [Scared](http://japaneseemoticons.me/scared-emoticons/)
 * [Worried](http://japaneseemoticons.me/worried-emoticons/)
 
+# How to create an authentication information?
+In order to collect data you need 
+
+We will use [application only authentication](https://dev.twitter.com/oauth/application-only) to create consumer key/secret and Access token/secret. 
+go to [Twitter Application Management](https://apps.twitter.com). Click Create New App.
+
+
 # Contributors
 * Yay-hyung Cho choyang@umich.edu
 * Byungcheon Ko bcko@umich.edu
