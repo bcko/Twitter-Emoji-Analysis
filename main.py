@@ -10,9 +10,28 @@ def authenticate():
 	oauth_handler = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 	oauth_handler.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 	
+def read_user_id_file_to_list(filename):
+	infile = open(filename)
+	user_id_list = []
+	for user_id in infile:
+		user_id_list.append(user_id.rstrip('\n'))		
+	infile.close()
+	return user_id_list
 
 def main():
-	# write
+	authentication = authenticate()
+	api = tweepy.API(authentication, 
+					 wait_on_rate_limit = True,
+					 wait_on_rate_limit_notify = True)
 	
+	us_id_list = read_user_id_file_to_list("Screen_name/US_id.txt")
+	canada_id_list = read_user_id_file_to_list("Screen_name/Canada_id.txt")
+	japan_id_list = read_user_id_file_to_list("Screen_name/Japan_id.txt")
+	brazil_id_list = read_user_id_file_to_list("Screen_name/Brazil_id.txt")
+	korea_id_list = read_user_id_file_to_list("Screen_name/Korea_id.txt")
+	print(us_id_list)
+	# write
 
+		
+main()
 
