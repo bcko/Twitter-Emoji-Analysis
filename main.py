@@ -24,12 +24,26 @@ def main():
 					 wait_on_rate_limit = True,
 					 wait_on_rate_limit_notify = True)
 	
+	group_name_list = ["US", "Canada", "Japan", "Brazil", "Korea"]
+	id_list = []	
+
+	
+
 	us_id_list = read_user_id_file_to_list("Screen_name/US_id.txt")
 	canada_id_list = read_user_id_file_to_list("Screen_name/Canada_id.txt")
 	japan_id_list = read_user_id_file_to_list("Screen_name/Japan_id.txt")
 	brazil_id_list = read_user_id_file_to_list("Screen_name/Brazil_id.txt")
 	korea_id_list = read_user_id_file_to_list("Screen_name/Korea_id.txt")
-	print(us_id_list)
+
+	outfilename = "US_tweets.txt"
+	outfile = open(outfilename, 'w')
+
+	for user_id in us_id_list:
+		for status in tweepy.Cursor(api.user_timeline, id=user_id).items():
+			outstring = "<Text_Begin ID=" + user_id + ">" + status.text + "<Text_End>\n"
+			outfile.write(outstring)
+
+	outfile.close()
 	# write
 
 		
