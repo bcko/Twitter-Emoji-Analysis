@@ -3,6 +3,8 @@ import tweepy
 
 
 def authenticate():
+
+
 	CONSUMER_KEY = open("Authentication/Consumer_Key.txt").read().rstrip("\n")
 	CONSUMER_SECRET = open("Authentication/Consumer_Secret.txt").read().rstrip("\n")
 
@@ -22,7 +24,14 @@ def read_user_id_file_to_list(filename):
 	return user_id_list
 
 def main():
-	print("hello")
+	script_directory = os.path.dirname(os.path.realpath(__file__))
+	main_directory = os.path.split(current_directory)[0]
+	authentication_directory = 	
+	print(main_directory)
+
+	
+
+"""
 	authentication = authenticate()
 	api = tweepy.API(authentication, 
 					 wait_on_rate_limit = True,
@@ -40,7 +49,7 @@ def main():
 	
 	print(os.getcwd())
 	print(__file__)
-
+"""
 """
 	outfilename = "US_tweets.txt"
 
