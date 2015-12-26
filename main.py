@@ -32,30 +32,20 @@ def main():
 	id_list = []	
 	us_id_list = read_user_id_file_to_list("Screen_name/US_id.txt")
 	canada_id_list = read_user_id_file_to_list("Screen_name/Canada_id.txt")
-	japan_id_list = read_user_id_file_to_list("Screen_name/Japan_id.txt")
+	japan_id_list = read_user_id_file_to_list("Screen_name/Japan_id1.txt")
 	brazil_id_list = read_user_id_file_to_list("Screen_name/Brazil_id.txt")
-	korea_id_list = read_user_id_file_to_list("Screen_name/Korea_id.txt")
-
+	korea_id_list = read_user_id_file_to_list("Screen_name/Korea_id1.txt")
 	
 	print(os.getcwd())
 	print(__file__)
 
-	outfilename = "US_tweets.txt"
-
-	outfile = open("~/Tweets/US/US_tweets.txt")
-	outfile.write("hello")
-	outfile.close()
-
-
-"""
-	for user_id in us_id_list:
-
+	for user_id in korea_id_list:
+		outfile = open(os.getcwd()+"/Tweets/Korea/"+user_id, 'w')
+		print("processing id= " + user_id) 
 		for status in tweepy.Cursor(api.user_timeline, id=user_id).items():
-			outstring = "<Text_Begin ID=" + user_id + ">" + status.text + "<Text_End>\n"
+			outstring = "<Text_Begin> " + status.text + " <Text_End>\n"
 			outfile.write(outstring)
-	outfile.close()
-"""
-
+		outfile.close()
 		
 main()
 
