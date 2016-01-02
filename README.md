@@ -82,13 +82,6 @@ Obtained from [http://japaneseemoticons.me/](http://japaneseemoticons.me/)
 * [Scared](http://japaneseemoticons.me/scared-emoticons/)
 * [Worried](http://japaneseemoticons.me/worried-emoticons/)
 
-# Contributors
-* Yay-hyung Cho choyang@umich.edu
-* Byungcheon Ko bcko@umich.edu
-* Jisoo Kim: jisookim@umich.edu
-* Brandon Mitchell brandmit@umich.edu
-* Andie Nam namyou@umich.edu
-
 # License
 [MIT License](https://github.com/bcko/twitter_emoji/blob/master/LICENSE)
 > The MIT License is a permissive license that is short and to the point. It lets people do anything they want with your code as long as they provide attribution back to you and don’t hold you liable.
