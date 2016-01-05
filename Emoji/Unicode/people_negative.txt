@@ -1,0 +1,32 @@
+    😣 Persevering Face
+    😥 Disappointed but Relieved Face
+    😯 Hushed Face
+    😫 Tired Face
+	☹ White Frowning Face
+	🙁 Slightly Frowning Face
+	😒 Unamused Face
+	😓 Face With Cold Sweat
+	😷 Face With Medical Mask
+	🤒 Face With Thermometer
+	🤕 Face With Head-Bandage
+	😞 Disappointed Face
+	😟 Worried Face
+	😤 Face With Look of Triumph
+	😢 Crying Face
+	😭 Loudly Crying Face
+	😦 Frowning Face With Open Mouth
+	😧 Anguished Face
+	😨 Fearful Face
+	😩 Weary Face
+	😬 Grimacing Face
+	😰 Face With Open Mouth and Cold Sweat
+	😱 Face Screaming in Fear
+	😵 Dizzy Face
+	😡 Pouting Face
+	😠 Angry Face
+	🙍 Person Frowning
+	🙎 Person With Pouting Face
+	🙅 Face With No Good Gesture
+	😾 Pouting Cat Face
+	😿 Crying Cat Face
+	🙀 Weary Cat Face	
