@@ -1,0 +1,9 @@
+    🤔 Thinking Face
+    😐 Neutral Face
+    😑 Expressionless Face
+    😶 Face Without Mouth
+    🙄 Face With Rolling Eyes
+    😮 Face With Open Mouth
+    🤐 Zipper-Mouth Face
+    😪 Sleepy Face
+    😴 Sleeping Face
