@@ -141,17 +141,31 @@ def main():
 	dirEmoji = dirTop + "/Emoji"
 
 	# create a list of tweets
-	koreanTweetsList = readTweets(dirTweet + "/Korea", "Korea")
+	#koreanTweetsList = readTweets(dirTweet + "/Korea", "Korea")
 	#japanTweetsList = readTweets(dirTweet + "/Japan", "Japan")
 	#usTweetsList = readTweets(dirTweet + "/US", "US")
-	#canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
+	canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
 
 	unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
-
+	
+	"""
 	for koreanTweet in koreanTweetsList:
 		koreanTweet.countEmoji(unicodeEmojiList)
 		print(koreanTweet.write())
-	
-	
+	"""	
+	"""	
+	for usTweet in usTweetsList:
+		usTweet.countEmoji(unicodeEmojiList)
+		print(usTweet.write())
+	"""
+	"""	
+	for japanTweet in japanTweetsList:
+		japanTweet.countEmoji(unicodeEmojiList)
+		print(japanTweet.write())
+	"""	
+
+	for canadaTweet in canadaTweetsList:
+		canadaTweet.countEmoji(unicodeEmojiList)
+		print(canadaTweet.write())
 
 main()
