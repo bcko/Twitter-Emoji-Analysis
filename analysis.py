@@ -20,9 +20,9 @@ class Tweet:
 		self.emojiSmileyAndPeople = -1
 		self.emojiSymbols = -1
 		self.emojiTravelAndPlaces = -1
-		self.textPositive = -1
-		self.textNeutral = -1
-		self.textNegative = -1
+		self.emoticonPositive = -1
+		self.emoticonNeutral = -1
+		self.emoticonNegative = -1
 	
 	def countEmoji(self, emojiList):
 		self.emojiActivity = 0
@@ -69,7 +69,7 @@ class Tweet:
 		pass
 
 	def write(self):
-		print(self.user+ '\t' + self.country + '\t' + str(self.charLength) + '\t' +  str(self.emojiPersonalPositive) + '\t' + str(self.emojiPersonalNeutral) + '\t' + str(self.emojiPersonalNegative) + '\t' + str(self.emojiActivity) + '\t' + str(self.emojiAnimalsAndNature) + '\t' + str(self.emojiFlags) + '\t' + str(self.emojiFoodAndDrink) + '\t' + str(self.emojiObjects) + '\t' + str(self.emojiSmileyAndPeople) + '\t' + str(self.emojiSymbols) + '\t' + str(self.emojiTravelAndPlaces) )
+		print(self.user+ '\t' + self.country + '\t' + str(self.charLength) + '\t' +  str(self.emojiPersonalPositive) + '\t' + str(self.emojiPersonalNeutral) + '\t' + str(self.emojiPersonalNegative) + '\t' + str(self.emojiActivity) + '\t' + str(self.emojiAnimalsAndNature) + '\t' + str(self.emojiFlags) + '\t' + str(self.emojiFoodAndDrink) + '\t' + str(self.emojiObjects) + '\t' + str(self.emojiSmileyAndPeople) + '\t' + str(self.emojiSymbols) + '\t' + str(self.emojiTravelAndPlaces) + '\t' + str(self.emoticonPositive) + '\t' + str(self.emoticonNeutral) + '\t' + str(self.emoticonNegative) )
 
 	# percent of message that have emoticon per user.
 	def stats(self, unicodeEmojiList):
@@ -146,7 +146,6 @@ def main():
 	#canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
 
 	#unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
-	emoticonList = readEmoticon(
 
 	"""
 	for koreanTweet in koreanTweetsList:
@@ -163,9 +162,17 @@ def main():
 		japanTweet.countEmoji(unicodeEmojiList)
 		print(japanTweet.write())
 	"""	
-
+	"""
 	for canadaTweet in canadaTweetsList:
 		canadaTweet.countEmoji(unicodeEmojiList)
 		print(canadaTweet.write())
-
+	"""
+	"""
+	print("user" + '\t' + "country" + '\t' + "charLength" + '\t' +  "emojiPersonalPositive" + '\t' + "emojiPersonalNeutral" + '\t' + "emojiPersonalNegative" + '\t' + "emojiActivity" + '\t' + "emojiAnimalsAndNature" + '\t' + "emojiFlags" + '\t' + "emojiFoodAndDrink" + '\t' + "emojiObjects" + '\t' + "emojiSmileyAndPeople" + '\t' + "emojiSymbols" + '\t' + "emojiTravelAndPlaces" + '\t' + "emoticonPositive" + '\t' + "emoticonNeutral" + '\t' + "emoticonNegative" )
+	"""	
+	emoticonList = readEmoticon(dirEmoji + "/Text_Based")
+	"""	
+	for emoticon in emoticonList:
+		print(emoticon.emoticon)
+	"""
 main()
