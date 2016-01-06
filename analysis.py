@@ -153,23 +153,23 @@ def main():
 
 	# create a list of tweets
 	koreanTweetsList = readTweets(dirTweet + "/Korea", "Korea")
-	#japanTweetsList = readTweets(dirTweet + "/Japan", "Japan")
-	#usTweetsList = readTweets(dirTweet + "/US", "US")
-	#canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
+	japanTweetsList = readTweets(dirTweet + "/Japan", "Japan")
+	usTweetsList = readTweets(dirTweet + "/US", "US")
+	canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
 
 	unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
 	emoticonList = readEmoticon(dirEmoji + "/Text_Based")
 	
-	"""
+	
 	print("user" + '\t' + "country" + '\t' + "charLength" + '\t' +  "emojiPersonalPositive" + '\t' + "emojiPersonalNeutral" + '\t' + "emojiPersonalNegative" + '\t' + "emojiActivity" + '\t' + "emojiAnimalsAndNature" + '\t' + "emojiFlags" + '\t' + "emojiFoodAndDrink" + '\t' + "emojiObjects" + '\t' + "emojiSmileyAndPeople" + '\t' + "emojiSymbols" + '\t' + "emojiTravelAndPlaces" + '\t' + "emoticonPositive" + '\t' + "emoticonNeutral" + '\t' + "emoticonNegative" )
-	"""	
+		
 
 	"""
 	for koreanTweet in koreanTweetsList:
 		koreanTweet.countEmoji(unicodeEmojiList)
 		koreanTweet.countEmoticon(emoticonList)
 		print(koreanTweet.write())
-	"""	
+	"""
 	"""	
 	for usTweet in usTweetsList:
 		usTweet.countEmoji(unicodeEmojiList)
@@ -182,12 +182,12 @@ def main():
 		japanTweet.countEmoticon(emoticonList)
 		print(japanTweet.write())
 	"""	
-	"""
+
 	for canadaTweet in canadaTweetsList:
 		canadaTweet.countEmoji(unicodeEmojiList)
 		canadaTweet.countEmoticon(emoticonList)
 		print(canadaTweet.write())
-	"""
+
 
 
 main()
