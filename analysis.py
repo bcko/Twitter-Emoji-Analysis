@@ -20,7 +20,10 @@ class Tweet:
 		self.emojiSmileyAndPeople = -1
 		self.emojiSymbols = -1
 		self.emojiTravelAndPlaces = -1
-		
+		self.textPositive = -1
+		self.textNeutral = -1
+		self.textNegative = -1
+	
 	def countEmoji(self, emojiList):
 		self.emojiActivity = 0
 		self.emojiAnimalsAndNature = 0
@@ -62,20 +65,8 @@ class Tweet:
 				print("unicodeType:" + emoji.unicodeType)
 				exit(1)
 
-	def countEmojiPersonal(self, emojiList):
-		self.emojiPersonalPositive = 0
-		self.emojiPersonalNegative = 0
-		self.emojiPersonalNeutral = 0
-		for emoji in emojiList:
-			if emoji.unicodeType == "people_positive.txt":
-				self.emojiPersonalPositive += self.tweet.count(emoji.emoji)
-			elif emoji.unicodeType == "people_neutral.txt":
-				self.emojiPersonalNeutral += self.tweet.count(emoji.emoji)
-			elif emoji.unicodeType == "people_negative.txt":
-				self.emojiPersonalNegative += self.tweet.count(emoji.emoji)
-			else:
-				print("unicodeType:" + emoji.unicodeType)				
-				exit(1)
+	def countEmoticon(self, emoticonList):
+		pass
 
 	def write(self):
 		print(self.user+ '\t' + self.country + '\t' + str(self.charLength) + '\t' +  str(self.emojiPersonalPositive) + '\t' + str(self.emojiPersonalNeutral) + '\t' + str(self.emojiPersonalNegative) + '\t' + str(self.emojiActivity) + '\t' + str(self.emojiAnimalsAndNature) + '\t' + str(self.emojiFlags) + '\t' + str(self.emojiFoodAndDrink) + '\t' + str(self.emojiObjects) + '\t' + str(self.emojiSmileyAndPeople) + '\t' + str(self.emojiSymbols) + '\t' + str(self.emojiTravelAndPlaces) )
@@ -94,6 +85,11 @@ class Tweet:
 			emojiCount += self.tweets.count(unicodeEmoji.emoji)		
 		print(emojiCount)
 
+class Emoticon:
+	def __init__(self, emoticon, filename):
+		self.emoticon = emoticon
+		self.filename = filename
+
 class UnicodeEmoji:
 	def __init__(self, emoji, descr, unicodeType):
 		self.emoji = emoji
@@ -102,9 +98,6 @@ class UnicodeEmoji:
 
 	def write(self):
 		print(self.emoji + '\t' + self.unicodeType + '\t' + self.descr)
-
-	def store(self, filename):
-		pass	
 
 def readTweets(directory, country):
 	tweet_list = []
@@ -130,8 +123,14 @@ def readUnicode(directory):
 			unicodeList.append(UnicodeEmoji(lineList[0], lineList[1], file))
 	return unicodeList
 
-def countUnicode(unicodeEmojiList, tweetList):
-	pass
+def readEmoticon(directory):
+	emoticonList = []
+	for file in os.listdir(directory):
+		infile = open(directory + "/" + file)
+		for line in infile:
+			line = line.rstrip("\n")
+			emoticonList.append(Emoticon(line, file))
+	return emoticonList
 
 def main():
 	# directory names
@@ -141,13 +140,14 @@ def main():
 	dirEmoji = dirTop + "/Emoji"
 
 	# create a list of tweets
-	#koreanTweetsList = readTweets(dirTweet + "/Korea", "Korea")
+	koreanTweetsList = readTweets(dirTweet + "/Korea", "Korea")
 	#japanTweetsList = readTweets(dirTweet + "/Japan", "Japan")
 	#usTweetsList = readTweets(dirTweet + "/US", "US")
-	canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
+	#canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
 
-	unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
-	
+	#unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
+	emoticonList = readEmoticon(
+
 	"""
 	for koreanTweet in koreanTweetsList:
 		koreanTweet.countEmoji(unicodeEmojiList)
