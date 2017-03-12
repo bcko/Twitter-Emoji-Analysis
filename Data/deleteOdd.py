@@ -1,5 +1,5 @@
 def main():
-	infile = open("canada.txt")
+	infile = open("singapore.txt")
 	isOdd = False
 	isHeading = True
 	for line in infile:

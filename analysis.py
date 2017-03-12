@@ -156,6 +156,8 @@ def main():
 	japanTweetsList = readTweets(dirTweet + "/Japan", "Japan")
 	usTweetsList = readTweets(dirTweet + "/US", "US")
 	canadaTweetsList = readTweets(dirTweet + "/Canada", "Canada")
+	malaysiaTweetsList = readTweets(dirTweet +"/Malaysia", "Malaysia")
+	singaporeTweetsList = readTweets(dirTweet +"/Singapore", "Singapore")
 
 	unicodeEmojiList = readUnicode(dirEmoji + "/Unicode")	
 	emoticonList = readEmoticon(dirEmoji + "/Text_Based")
@@ -182,12 +184,21 @@ def main():
 		japanTweet.countEmoticon(emoticonList)
 		print(japanTweet.write())
 	"""	
-
+	"""
 	for canadaTweet in canadaTweetsList:
 		canadaTweet.countEmoji(unicodeEmojiList)
 		canadaTweet.countEmoticon(emoticonList)
 		print(canadaTweet.write())
-
-
+	"""
+	"""
+	for malaysiaTweet in malaysiaTweetsList:
+		malaysiaTweet.countEmoji(unicodeEmojiList)
+		malaysiaTweet.countEmoticon(emoticonList)
+		print(malaysiaTweet.write())
+	"""
+	for singaporeTweet in singaporeTweetsList:
+		singaporeTweet.countEmoji(unicodeEmojiList)
+		singaporeTweet.countEmoticon(emoticonList)
+		print(singaporeTweet.write())
 
 main()

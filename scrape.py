@@ -27,13 +27,13 @@ def main():
 					 wait_on_rate_limit = True,
 					 wait_on_rate_limit_notify = True)
 
-	malaysia_id_list = read_user_id_file_to_list("Screen_name/Malaysia_id.txt")	
+	singapore_id_list = read_user_id_file_to_list("Screen_name/Singapore_id.txt")	
 
 	print(os.getcwd())
 	print(__file__)
 
-	for user_id in malaysia_id_list:
-		outfile = open(os.getcwd()+"/Tweets/Malaysia/"+user_id, 'w')
+	for user_id in singapore_id_list:
+		outfile = open(os.getcwd()+"/Tweets/Singapore/"+user_id, 'w')
 		print("processing id= " + user_id) 
 		for status in tweepy.Cursor(api.user_timeline, id=user_id).items():
 			outstring = "<Text_Begin> " + status.text + " <Text_End>\n"
